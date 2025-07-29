@@ -22,6 +22,10 @@ function alternateCaps(str) {
     return result;
 }
 
+app.get('/', (req, res) => {
+  res.send('Bajaj Finserv API is running. Use POST /bfhl');
+});
+
 app.post('/bfhl', (req, res) => {
     try {
         const data = req.body.data;
