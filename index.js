@@ -11,7 +11,7 @@ function isNumber(str) {
 }
 
 function isAlphabet(str) {
-    return /^[a-zA-Z]$/.test(str);
+  return /^[a-zA-Z]+$/.test(str);
 }
 
 function alternateCaps(str) {
